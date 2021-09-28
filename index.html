@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>~</title>
+		<title>~ </title>
+		<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<script src="scripts/transitions.js"></script>
@@ -14,7 +15,29 @@
 
 		<!-- Welcome screen -->
 		<div id="main_window">
-			<img id=leftImg src="assets/img/image.png" class="image">
+
+			<!-- Thanks mwinter1 https://forum.squarespace.com/topic/62813-display-random-image-on-page/ -->
+			<script language="JavaScript">
+				<!--
+				
+				function random_imglink(){
+				var myimages=new Array()
+				//specify random images below. You can have as many as you wish
+				myimages[1]="assets/img/image1.png"
+				myimages[2]="assets/img/image2.png"
+				myimages[3]="assets/img/image3.png"
+				myimages[4]="assets/img/image4.png"
+				myimages[5]="assets/img/image5.png"
+				
+				var ry=Math.floor(Math.random()*myimages.length)
+				if (ry==0)
+					ry=1
+					document.write('<img id=leftImg src="'+myimages[ry]+'" class="image">')
+				}
+				random_imglink()
+				//-->
+			</script>
+
 			<div id="content">
 				<h1 class="title">Welcome</h1>
 				<div id="date">
