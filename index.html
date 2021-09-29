@@ -6,7 +6,9 @@
 		<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/checklist.css">
 		<script src="scripts/transitions.js"></script>
+		<script src="scripts/tdlist.js"></script>
 	</head>
 
 	<body>
@@ -22,12 +24,11 @@
 			<div id="content">
 				<h1 class="title">Bem-Vindo</h1>
 				<div id="date">
-		<script src="scripts/time.js"></script>
+					<script src="scripts/time.js"></script>
 				</div>
 
-<br>
-
-		<!-- Links -->
+				<br>
+				<!-- Links -->
 				<nav>
 					<div id=links_container>
 						<ul>
@@ -59,8 +60,27 @@
 					</div>
 				</nav>
 			</div>
+
 		</div>
 
+		<div id="td_window">
+
+			<div class="header">
+				<h2 id="td">To Do</h2>
+				<input type="text" id="myInput" placeholder="Nome...">
+				<span onclick="newElement()" class="addBtn">⏎</span>
+			</div>
+			  
+			<ul id="myUL">
+			
+			</ul>
+			
+			<!--
+			<script>reTodo(); </script>
+			<script>retakeTodo(); </script>
+			-->
+
+		</div>
 		<!-- Footer -->
 		<div class="bottom">
 			<p class="credits">
@@ -69,7 +89,7 @@
 
 			<div class="contacts">
 				<p>
-					<a href="https://github.com/PedroMiguelCarraro/startpage">Git Repo</a>
+					<a href="https://github.com/PedroMiguelCarraro/startpage" target="_blank">Git Repo</a>
 					 | 
 					<span id="light-mode-toggle" class="light-mode-toggle">Switch theme</span>
 				</p>

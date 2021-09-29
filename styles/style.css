@@ -75,11 +75,25 @@ form:focus-within input::placeholder {
 	padding-right: 40px;
 	margin: 0;
 	position: absolute;
+	/*display: inline-block;*/
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	transition: all 0.25s;
+}
+
+#td_window {
+	background-color: var(--fg);
+	width: 275px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	right:2%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: all 0.25s;
+	padding-left: 35px;
 }
 
 #art_window_csm {
@@ -116,6 +130,7 @@ form:focus-within input::placeholder {
 	padding-top: 30px;
 	margin-left: 300px;
 }
+
 
 #source {
 	/*margin-top: 15%;*/
