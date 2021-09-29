@@ -1,4 +1,4 @@
-# Pedro's startpage
+# Spy's startpage
 This is a simple, minimal startpage I customized to my needs.
 
 ![Preview](assets/img/previewrm.png)
