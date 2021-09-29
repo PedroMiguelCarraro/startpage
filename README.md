@@ -1,6 +1,10 @@
 # Spy's startpage
 This is a simple, minimal startpage I customized to my needs.
 
+Random image every reload,
+To Do list,
+Links.
+
 ![Preview](assets/img/preview.png)
 
 # Credits
