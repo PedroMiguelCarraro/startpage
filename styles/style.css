@@ -81,7 +81,43 @@ form:focus-within input::placeholder {
 	transition: all 0.25s;
 }
 
+#art_window_csm {
+	background-color: var(--fg);
+	width: 910px;
+	padding-right: 40px;
+	padding-bottom: 180px;
+	margin-top: 60px;
+	margin-bottom: 140px;
+	position: relative;
+	top: 200px;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: all 0.25s;
+}
+
+#art_window {
+	background-color: var(--fg);
+	width: 910px;
+	padding-right: 40px;
+	/*padding-bottom: 330px;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	top: 200px;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: all 0.25s;
+}
+
 #content {
+	padding-top: 30px;
+	margin-left: 300px;
+}
+
+#source {
+	/*margin-top: 15%;*/
 	padding-top: 30px;
 	margin-left: 300px;
 }
