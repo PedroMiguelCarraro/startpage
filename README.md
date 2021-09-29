@@ -1,7 +1,11 @@
 # Spy's startpage
 This is a simple, minimal startpage I customized to my needs.
 
-![Preview](assets/img/previewrm.png)
+Random image every reload,
+To Do list,
+Links.
+
+![Preview](assets/img/preview.png)
 
 # Credits
 This is a fork of [WitherCubes's minimal startpage](https://github.com/WitherCubes/startpage), with modification of colors.
