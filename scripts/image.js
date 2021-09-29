@@ -1,5 +1,8 @@
-
-
+/*
+ *  Thanks mwinter1
+ *   https://forum.squarespace.com/topic/62813-display-random-image-on-page/ -->
+ * 
+ */
 function random_imglink(){
     var myimages=new Array()
     //specify random images below. You can have as many as you wish
