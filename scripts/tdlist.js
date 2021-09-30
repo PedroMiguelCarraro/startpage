@@ -1,42 +1,39 @@
 // Create a "close" button and append it to each list item
 
-
-/*var td = [];
+//Load To Do list from localstorage
 var ii = 0;
+function loadTD() {
+  for(ii=0; ii< parseInt(localStorage.getItem("max")); ii++){
+    var li = document.createElement("li");
+    var inputValue = localStorage.getItem(ii);
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    li.id = ii;
+    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myInput").value = "";
 
-function reTodo(){
-    td = localStorage.getItem("tdl");
-    ii = localStorage.getItem("ii");
-}
-//From local store to html element
-function retakeTodo() {
-    for (ii = 0; ii < td.length; ii++){
-        var li = document.createElement("li");
-        var t = td[ii];
-        li.appendChild(t);
-        if (inputValue === '') {
-            //alert("You must write something!");
-        } else {
-        document.getElementById("myUL").appendChild(li);
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+    
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+        
+        for(var j=div.id;j<ii;j++){
+          localStorage.setItem(j,localStorage.getItem(parseInt(j)+parseInt(1)));
         }
-        document.getElementById("myInput").value = "";
-
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        li.appendChild(span);
-
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function() {
-                var div = this.parentElement;
-                div.style.display = "none";
-            }
-        }
+        ii--;
+        localStorage.setItem("max",ii);
+      }
     }
+  }
 }
-*/
 
+/*
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -45,7 +42,7 @@ for (i = 0; i < myNodelist.length; i++) {
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
-}
+}*/
 
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
@@ -54,6 +51,13 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    /*
+    localStorage.removeItem(div.id);
+    ii--;
+    localStorage.setItem("max",ii);
+    for(j=div.id;j<ii;j++){
+      localStorage.setItem(j,localStorage.getItem(j+1));
+    }*/
   }
 }
 
@@ -73,13 +77,15 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+  li.id = ii;
   if (inputValue === '') {
     //alert("You must write something!");
   } else {
     document.getElementById("myUL").appendChild(li);
-    /*td[ii] = t;
+    
+    localStorage.setItem(ii,inputValue);
     ii++;
-    saveTodo();*/
+    localStorage.setItem("max",ii);
   }
   document.getElementById("myInput").value = "";
 
@@ -88,16 +94,28 @@ function newElement() {
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
-
+  
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
+      
+      for(var j=div.id;j<ii;j++){
+        localStorage.setItem(j,localStorage.getItem(parseInt(j)+parseInt(1)));
+      }
+      
+      //localStorage.removeItem(div.id);
+      ii--;
+      localStorage.setItem("max",ii);
+      
+      //localStorage.removeItem(div.id+1);
+      
     }
   }
 }
-/*
-function saveTodo(){
-    localStorage.setItem('tdl','td[]');
-    localStorage.setItem('ii','ii');
-}*/
+
+if(localStorage.getItem("max") == 0){
+  localStorage.clear();
+}
+
+console.log( localStorage );
