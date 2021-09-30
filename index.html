@@ -68,7 +68,7 @@
 			<div class="header">
 				<h2 id="td">To Do</h2>
 				<input type="text" id="myInput" placeholder="Nome...">
-				<span onclick="newElement()" class="addBtn">⏎</span>
+				<span id="addBtn" onclick="newElement()" class="addBtn">⏎</span>
 			</div>
 			
 			
@@ -76,8 +76,19 @@
 			<ul id="myUL">
 			
 			</ul>
-			
+
 			<script>loadTD();</script>
+			
+			<script>
+			// Get the input field
+				var input = document.getElementById("myInput");
+				input.addEventListener("keyup", function(event) {
+				if (event.keyCode === 13) {
+					//event.preventDefault();
+					document.getElementById("addBtn").click();
+				}
+				});
+			</script>
 
 		</div>
 		<!-- Footer -->

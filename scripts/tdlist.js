@@ -118,4 +118,3 @@ if(localStorage.getItem("max") == 0){
   localStorage.clear();
 }
 
-console.log( localStorage );
