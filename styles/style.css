@@ -116,7 +116,7 @@ form:focus-within input::placeholder {
 	width: 910px;
 	padding-right: 40px;
 	/*padding-bottom: 330px;*/
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 	margin-bottom: 30px;
 	position: relative;
 	top: 200px;

@@ -1,6 +1,9 @@
 /*
  *  Thanks mwinter1
- *   https://forum.squarespace.com/topic/62813-display-random-image-on-page/ -->
+ *   https://forum.squarespace.com/topic/62813-display-random-image-on-page/
+ * 
+ *  Thanks victorvde
+ *   https://github.com/victorvde/jpeg2png
  * 
  */
 function random_imglink(){
@@ -11,6 +14,8 @@ function random_imglink(){
     myimages[3]="assets/img/image3.png"
     myimages[4]="assets/img/image4.png"
     myimages[5]="assets/img/image5.png"
+    myimages[6]="assets/img/image6.png"
+    myimages[7]="assets/img/image7.png"
 
     var ry=Math.floor(Math.random()*myimages.length)
     if (ry==0)
