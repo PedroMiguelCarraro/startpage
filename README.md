@@ -5,7 +5,7 @@ Random image every reload,
 To Do list,
 Links.
 
-![Preview](assets/img/preview.png)
+![Preview](assets/img/previewrm.png)
 
 # Credits
 This is a fork of [WitherCubes's minimal startpage](https://github.com/WitherCubes/startpage), with modification of colors.
