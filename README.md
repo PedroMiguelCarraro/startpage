@@ -4,10 +4,11 @@ This is a simple, somewhat-minimal startpage I customized to my needs.
 ![Preview](assets/img/preview.png)
 
 # Features
-Time and Date
-Links
-To Do List
-Random image after 5min
+- Time and Date
+- Links
+- To Do List
+- Random images
+    - Change every 5min
 
 
 # Credits
