@@ -7,6 +7,7 @@ This is a simple, somewhat-minimal startpage I customized to my needs.
 - Time and Date
 - Links
 - To Do List
+    - Save between sessions
 - Random images
     - Change every 5min
 
