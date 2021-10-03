@@ -6,8 +6,9 @@
  *   https://github.com/victorvde/jpeg2png
  * 
  */
-function random_imglink(){
-    var myimages=new Array()
+
+//add here imgs
+var myimages=new Array()
     //specify random images below. You can have as many as you wish
     myimages[1]="assets/img/image1.png"
     myimages[2]="assets/img/image2.png"
@@ -17,10 +18,24 @@ function random_imglink(){
     myimages[6]="assets/img/image6.png"
     myimages[7]="assets/img/image7.png"
 
+//first random
+function random_imglink(){
+    
     var ry=Math.floor(Math.random()*myimages.length)
     if (ry==0)
         ry=1
         document.write('<img id=leftImg src="'+myimages[ry]+'" class="image">')
 }
 
+//rand every time
+function time_imag(){
+    var nodo = document.getElementById("leftImg");
+    var ry=Math.floor(Math.random()*myimages.length)
+    if (ry==0)
+        ry=1
+    nodo.src = myimages[ry];
+}
+
+//time change here , now 5min = 300000
+setInterval(time_imag, 300000);
 random_imglink()
