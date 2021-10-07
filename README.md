@@ -1,6 +1,8 @@
 # Spy's startpage
 This is a simple, somewhat-minimal startpage I customized to my needs.
 
+What about a live demo, [here](https://pedromiguelcarraro.github.io/startpage/index.html)
+
 ![Preview](assets/img/preview.png)
 
 # Features
