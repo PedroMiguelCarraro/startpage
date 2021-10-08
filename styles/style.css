@@ -244,6 +244,34 @@ form:focus-within input::placeholder {
 	}
 }
 
+@media (max-width: 1400px) {
+	/*fix here*/
+	.tditem { 
+		padding: 4px 8px 4px 5px;
+	}
+
+	#main_window {
+		width: 865px;
+	}
+
+	#content {
+		margin-left: 275px;
+
+	}
+
+	#td_window{
+		width: 230px;
+		transform: translate(0%, -50%);
+		right: 10px;
+	}
+
+	#myUL{
+		padding: 0px;
+	}
+
+	
+}
+
 @media (max-width: 833px) {
 	img#leftImg {
 		display: none;

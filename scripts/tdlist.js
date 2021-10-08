@@ -9,6 +9,7 @@ function loadTD() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     li.id = ii;
+    li.className = "tditem";
     document.getElementById("myUL").appendChild(li);
     document.getElementById("myInput").value = "";
 
@@ -78,6 +79,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   li.id = ii;
+  li.className = "tditem";
   if (inputValue === '') {
     //alert("You must write something!");
   } else {
