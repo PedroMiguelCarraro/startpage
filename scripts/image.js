@@ -23,6 +23,9 @@ var myimages=new Array()
     myimages[11]="assets/img/image11.png"
     myimages[12]="assets/img/image12.png"
     myimages[13]="assets/img/image13.png"
+    myimages[14]="assets/img/image14.png"
+    myimages[15]="assets/img/image15.png"
+    myimages[16]="assets/img/image16.png"
 
 //first random
 function random_imglink(){
