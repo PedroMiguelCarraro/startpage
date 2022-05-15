@@ -71,8 +71,8 @@ form:focus-within input::placeholder {
 
 #main_window {
 	background-color: var(--fg);
-	width: 910px;
-	padding-right: 40px;
+	width: 975px;
+	padding-right: 30px;
 	margin: 0;
 	position: absolute;
 	/*display: inline-block;*/
@@ -128,9 +128,8 @@ form:focus-within input::placeholder {
 
 #content {
 	padding-top: 30px;
-	margin-left: 300px;
+	margin-left: 375px;
 }
-
 
 #source {
 	/*margin-top: 15%;*/
@@ -165,7 +164,9 @@ form:focus-within input::placeholder {
 }
 
 .image {
-	max-width: 250px;
+	max-width: 375px;
+	max-height: 585px;
+	padding-right: 25px;
 	float: left;
 }
 
